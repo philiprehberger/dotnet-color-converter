@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <PackageId>Philiprehberger.ColorConverter</PackageId>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Convert between RGB, HSL, HSV, Hex, and CMYK color models with lighten, darken, saturate, and complement operations.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

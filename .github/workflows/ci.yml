@@ -2,16 +2,17 @@ name: CI
 
 on:
   push:
-    tags:
-      - "v*"
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -24,8 +25,21 @@ jobs:
       - name: Build
         run: dotnet build src/Philiprehberger.ColorConverter.csproj --configuration Release --no-restore
 
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
       - name: Pack
-        run: dotnet pack src/Philiprehberger.ColorConverter.csproj --configuration Release --no-build -o out
+        run: dotnet pack src/Philiprehberger.ColorConverter.csproj --configuration Release -o out
 
       - name: Publish to NuGet
         run: dotnet nuget push out/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

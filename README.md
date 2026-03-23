@@ -1,8 +1,8 @@
 # Philiprehberger.ColorConverter
 
-[![NuGet](https://img.shields.io/nuget/v/Philiprehberger.ColorConverter)](https://www.nuget.org/packages/Philiprehberger.ColorConverter)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/philiprehberger/dotnet-color-converter/blob/main/LICENSE)
 [![CI](https://github.com/philiprehberger/dotnet-color-converter/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-color-converter/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/Philiprehberger.ColorConverter.svg)](https://www.nuget.org/packages/Philiprehberger.ColorConverter)
+[![License](https://img.shields.io/github/license/philiprehberger/dotnet-color-converter)](LICENSE)
 
 Convert between RGB, HSL, HSV, Hex, and CMYK color models with lighten, darken, saturate, and complement operations.
 
