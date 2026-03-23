@@ -6,10 +6,6 @@
 
 Convert between RGB, HSL, HSV, Hex, and CMYK color models with lighten, darken, saturate, and complement operations.
 
-## Requirements
-
-- .NET 8.0 or later
-
 ## Installation
 
 ```bash
@@ -85,13 +81,9 @@ Console.WriteLine(teal.ToHex());  // "#008080"
 ## Development
 
 ```bash
-# Build
 dotnet build src/Philiprehberger.ColorConverter.csproj --configuration Release
-
-# Pack
-dotnet pack src/Philiprehberger.ColorConverter.csproj --configuration Release -o out
 ```
 
 ## License
 
-[MIT](LICENSE)
+MIT
