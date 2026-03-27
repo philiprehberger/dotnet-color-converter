@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (2026-03-26)
+
+- Add Sponsor badge and fix License link format in README
+
 All notable changes to this project will be documented in this file.
 
 ## 0.1.2 (2026-03-22)
