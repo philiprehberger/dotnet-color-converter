@@ -1,10 +1,15 @@
 # Changelog
 
+## 0.2.0 (2026-03-27)
+
+- Add color harmony functions (complementary, triadic, tetradic, analogous, split-complementary)
+- Add WCAG contrast ratio calculation with AA/AAA compliance checks
+- Add color blending modes (multiply, screen, overlay)
+- Add gradient generation with HSL interpolation
+
 ## 0.1.3 (2026-03-26)
 
 - Add Sponsor badge and fix License link format in README
-
-All notable changes to this project will be documented in this file.
 
 ## 0.1.2 (2026-03-22)
 
