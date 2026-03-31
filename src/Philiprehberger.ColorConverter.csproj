@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <PackageId>Philiprehberger.ColorConverter</PackageId>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Convert between RGB, HSL, HSV, Hex, and CMYK color models with harmonies, contrast ratio, blending, and gradient generation.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
